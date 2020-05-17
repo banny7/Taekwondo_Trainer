@@ -38,7 +38,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="col-md-12">
                         <!-- input field for MESSAGE -->
-                        <input class="input_field required" type="pasword" name="password" placeholder="Password">
+                        <input class="input_field required" type="password" name="password" placeholder="Password">
                     </div>
                 </div>
                 <div class="row">

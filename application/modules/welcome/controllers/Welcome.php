@@ -18,8 +18,19 @@ class Welcome extends MY_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+	function __construct()
+    {
+        // this is your constructor
+        parent::__construct();
+        $this->load->helper('form');
+        $this->load->helper('url');
+    }
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		$this->load->view('homepage');
+	}
+	public function Mail(){
+		$form_data = $this->input->post();
+		redirect('','refresh');
 	}
 }
